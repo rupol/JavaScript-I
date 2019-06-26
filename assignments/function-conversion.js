@@ -1,6 +1,6 @@
 // Take the commented ES5 syntax and convert it to ES6 arrow Syntax
 
-console.log("\n ********** FUNCTION CONVERSIONS **********");
+console.log("\n/////////////// FUNCTION CONVERSIONS ///////////////");
 
 //// arrow syntax 1
 // let myFunction = function () {

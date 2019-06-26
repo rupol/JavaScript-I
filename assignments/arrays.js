@@ -2,7 +2,7 @@
 
 // The car dealer has all of their inventory housed in the array seen below.  Scroll down past the data to find out how you can help the car dealer.
 
-console.log("\n ********** ARRAYS **********");
+console.log("\n/////////////// ARRAYS ///////////////");
 
 let inventory = [
   { id: 1, car_make: "Lincoln", car_model: "Navigator", car_year: 2009 },
