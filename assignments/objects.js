@@ -103,18 +103,21 @@ const parent = {
   age: 70,
   speak: function() {
     console.log(`Hi there young whipper snapper! My name is ${this.name}.`);
+    return `Hi there young whipper snapper! My name is ${this.name}.`;
   },
   child: {
     name: "George",
     age: 50,
     speak: function() {
       console.log(`Hello! My name is ${this.name}.`);
+      return `Hello! My name is ${this.name}.`;
     },
     grandchild: {
       name: "Sam",
       age: 30,
       speak: function() {
         console.log(`Hey, I'm ${this.name}.`);
+        return `Hey, I'm ${this.name}.`;
       }
     }
   }
@@ -141,3 +144,35 @@ parent.child.speak();
 
 // Have the grandchild speak
 parent.child.grandchild.speak();
+
+////////////// DOM DISPLAY
+function display() {
+  //challenge 2
+  document.getElementById("obj-sol-1").textContent = internA.name;
+  document.getElementById("obj-sol-2").textContent = internB.id;
+  document.getElementById("obj-sol-3").textContent = internC.email;
+  document.getElementById("obj-sol-4").textContent = internD.name;
+  document.getElementById("obj-sol-5").textContent = internE.gender;
+
+  //challenge 3
+  document.getElementById("obj-sol-6").textContent = internB.speak();
+  document.getElementById("obj-sol-7").textContent = internE.multiplyNums(3, 4);
+
+  //stretch
+  document.getElementById("obj-sol-8").textContent = `Parent's name: ${
+    parent.name
+  }`;
+  document.getElementById("obj-sol-9").textContent = `Child's age: ${
+    parent.child.age
+  }`;
+  document.getElementById("obj-sol-10").textContent = `Grandchild - name: ${
+    parent.child.grandchild.name
+  }; age: ${parent.child.grandchild.age}`;
+  document.getElementById("obj-sol-11").textContent = parent.speak();
+  document.getElementById("obj-sol-12").textContent = parent.child.speak();
+  document.getElementById(
+    "obj-sol-13"
+  ).textContent = parent.child.grandchild.speak();
+}
+
+display();
